@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="model"
+            type="com.test.loblaw.newsfeed.fragments.ListFragment.ViewHolder" />
+
+        <variable
+            name="handler"
+            type="com.test.loblaw.newsfeed.fragments.ListFragment.ClickHandler" />
+    </data>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="@{handler::onClicked}"
+            android:padding="@dimen/spacing"
+            android:text="@{model.title}"
+            android:textSize="16sp"
+            tools:text="Test headline" />
+    </android.support.constraint.ConstraintLayout>
+</layout>
