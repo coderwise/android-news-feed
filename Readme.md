@@ -4,7 +4,7 @@
 - We should have a Model as `Article` which has all field mapped with it
 - When application is launching it loads the data from Google in an collection of articles ready to use
 - Main activity is there but empty
-
+```
 {
 "id": "abc-news-au",
 "name": "ABC News (AU)",
@@ -14,3 +14,4 @@
 "language": "en",
 "country": "au"
 }
+```
